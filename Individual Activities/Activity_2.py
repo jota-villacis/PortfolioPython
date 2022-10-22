@@ -1,32 +1,30 @@
-# ACTIVIDAD INDIVIDUAL 2
+# INDIVIDUAL ACTIVITY 2
 
 '''
 
-Familiarizado ya con estos componentes debemos prepararnos en realizar las siguientes acciones, para
-simular la compra a través de una página web
+Once familiar with these components, we must prepare ourselves to carry out the following actions, to simulate the purchase through a web page
 
-● En base al contexto: Piensa en una aplicación web que busque solucionar una problemática.
-● Esta aplicación debe entregar la posibilidad de iniciar sesión con un perfil individual.
-● Generalmente, uno ingresa a su cuenta personal en una página, ésta te saluda y te reconoce
-● Intentemos replicar esto. Crea un string con el nombre de al menos 7 usuarios de tu aplicación.
-● Ahora piensa en tres de ellos. Búscalos en la lista con el método adecuado.
-● ¿Qué problemas pueden surgir si otra persona quiere buscar a un usuario e ingresa manualmente
-su nombre? ¿Cómo solucionarías este problema?
-● Convierte tu string en una lista, en la cual cada elemento es un usuario.
-● Imprima en pantalla la cantidad usuarios que tiene tu aplicación.
-● Imprima en pantalla un mensaje de saludo a los diferentes usuarios. ¿Qué técnica puedes utilizar
-para realizar esto?
+Based on the context: Think of a web application that seeks to solve a problem.
+This application must provide the possibility to log in with an individual profile.
+Generally, you enter your personal account on a page, and it greets you and recognizes you.
+Let's try to replicate this.
+● Create a string with the name of at least 7 users of your application.
+● Now think of three of them. Look for them in the list with the appropriate method.
+● What problems can arise if another person wants to search for a user and manually enters your name? How would you solve this problem?
+● Convert your string to a list, in which each element is a user.
+● Print on the screen the number of users your application has.
+● Print a greeting message to the different users on the screen. What technique can you use to do this?
 
 
 '''
 
-# Crea un string con el nombre de al menos 7 usuarios de tu aplicación.
+# Create a string with the name of at least 7 users of your application.
 from pickle import FALSE, TRUE
 
 
 user = 'user1 user2 user3 user4 user5 user6 user7'
 
-# Ahora piensa en tres de ellos. Búscalos en la lista con el método adecuado.
+# Now think of three of them. Look for them in the list with the appropriate method.
 searchedUser = input("Insert username: ")
 
 if searchedUser in user:
@@ -34,18 +32,17 @@ if searchedUser in user:
 else:
     print('User Not Found')
     
-# ¿Qué problemas pueden surgir si otra persona quiere buscar a un usuario e ingresa manualmente su nombre? ¿Cómo solucionarías este problema?
+# What problems can arise if another person wants to search for a user and manually enters your name? How would you solve this problem?
 '''
-Que ingrese uno de los caracteres en mayuscula o minuscula y en la base de datos se encuentre en un formato distinto al buscado
-Se puede solucionar implementando un metodo para que el dato buscado quede completamente en mayuscula, minuscula o capitalizado, dependiendo de lo que se requiera
+That you enter one of the characters in uppercase or lowercase and in the database it is in a different format than the one searched for.
+It can be worked around by implementing a method to make the fetched data fully uppercase, lowercase, or uppercase, as required.
 '''
 
-# Convierte tu string en una lista, en la cual cada elemento es un usuario.
+# Convert your string to a list, in which each element is a user.
 userList = user.split(" ")
-print(f'La cantidad de usuarios es de: {len(userList)}')
+print(f'The number of users is: {len(userList)}')
 
-# Imprima en pantalla un mensaje de saludo a los diferentes usuarios. ¿Qué técnica puedes utilizar para realizar esto?
-
+# Print a greeting message to the different users on the screen. What technique can you use to do this?
 for usu in userList:
-    print(f'Saludos {usu}!')
+    print(f'Greetings {usu}!')
 
