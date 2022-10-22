@@ -41,4 +41,4 @@ print(f'The number of users is: {len(userList)}')
 
 # Print a greeting message to the different users on the screen. What technique can you use to do this?
 for usu in userList:
-    print(f'Greetings {usu}!') 
+    print(f'Greetings {usu}!')
