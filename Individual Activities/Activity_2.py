@@ -19,9 +19,6 @@ Let's try to replicate this.
 '''
 
 # Create a string with the name of at least 7 users of your application.
-from pickle import FALSE, TRUE
-
-
 user = 'user1 user2 user3 user4 user5 user6 user7'
 
 # Now think of three of them. Look for them in the list with the appropriate method.
